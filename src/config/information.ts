@@ -2,7 +2,7 @@ import type {ResturantInterface} from 'types/resturant';
 
 const information: ResturantInterface = {
   name: 'کافه يــولــو',
-  description: 'خوش آمدید به کافه یولو، جایی که لذت را با طعم‌ها به اشتراک می‌گذاریم!',
+  description: ' You only live once. Welcome to Yolo Coffee ',
   phone: '09911050903',
   location: {
     latitude: 35.7398102,
