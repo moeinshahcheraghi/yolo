@@ -93,7 +93,7 @@ const menu: MenuInterface[] = [
       {
         name: 'آیس آمریکانو',
         price: 50000,
-        description: 'اسپرسو + آب سرد',
+        description: 'اسپرسو + آب سرد'
       },
       {
         name: 'آیس لاته',
