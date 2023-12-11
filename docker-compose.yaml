@@ -1,0 +1,17 @@
+version: '3'
+services:
+  ads_price:
+    build: .
+    restart: always
+    volumes:
+        - /etc/localtime:/etc/localtime:ro
+    networks:
+        - docker_Build
+
+
+
+
+networks:
+    docker_Build:
+      external: true
+

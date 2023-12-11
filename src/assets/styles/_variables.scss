@@ -1,0 +1,18 @@
+$fontFamily: Vazirmatn, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+  'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+$direction: rtl;
+
+:root {
+  --color-primary: #15803d;
+  --color-primary-dark: #052A19;
+  --color-secondary: #0a0a0a;
+  --color-secondary-dark: #000;
+  --color-body: #0a0a0a;
+  --color-body-light: #eef1f645;
+  --color-body-dark: #424750;
+  --color-pen: #f3f4f6;
+  --color-pen-dark: #f4f4f4;
+  --font-family: $fontFamily;
+  --toastify-font-family: $fontFamily;
+}

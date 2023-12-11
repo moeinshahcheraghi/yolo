@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+@tailwind screens;
+
+@layer base {
+  @import 'variables';
+
+  html,
+  body {
+    @apply h-full font-body bg-body;
+    direction: rtl;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    @apply text-h1;
+  }
+  h2 {
+    @apply text-h2;
+  }
+  h3 {
+    @apply text-h3;
+  }
+  h4 {
+    @apply text-h4;
+  }
+  h5 {
+    @apply text-h5;
+  }
+  h6 {
+    @apply text-h6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply mb-2 mt-0 font-bold;
+  }
+
+  .ltr {
+    direction: ltr;
+  }
+
+  .rtl {
+    direction: rtl;
+  }
+
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0.5em;
+    background: transparent;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.3);
+    opacity: 0.4;
+    border-radius: 10px;
+  }
+
+  .hidden-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  body {
+    @apply text-pen ltr pb-10;
+    :first-child {
+      direction: rtl;
+    }
+
+  }
+
+  .header {
+    @apply h-48	md:h-72 relative bg-coverImg bg-cover bg-center md:bg-[center_top_33%];
+    &:before {
+      @apply content-[''] absolute inset-x-0 inset-y-0 z-0;
+      background: linear-gradient(145deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+  }
+
+  .divide-text {
+    @apply flex flex-row justify-between items-center space-x-2
+    after:content-[''] after:flex-1 after:h-[0.0625rem] after:border-t after:mr-3 after:border-slate-300
+    before:content-[''] before:flex-1 before:h-[0.0625rem] before:border-t before:ml-3 before:border-slate-300;
+  }
+
+}
